@@ -1,0 +1,33 @@
+# ==========================================================================
+# PRIVATE assessment data - never publish.
+# These describe a live personal environment in enough detail to be a
+# security risk. If you run the tool inside this folder, these patterns keep
+# the sensitive output from ever being committed.
+# ==========================================================================
+
+# Filled worksheet, raw evidence, and risk register (specific weaknesses)
+csf-worksheet.csv
+csf-worksheet.orig.csv
+csf-risk-register.csv
+evidence-*.md
+scope.txt
+
+# Internal policy / inventory / runbook / remediation docs (name ISP, devices, layout)
+docs/
+remediation-plan.md
+
+# The detailed (non-sanitized) report. The sanitized csf-maturity-report.md is
+# the one that is published; this ignore is for the detailed one if generated here.
+csf-assessment-report.md
+
+# One-time local helper scripts (not part of the published tool)
+add_plain_english.py
+professionalize_notes.py
+fill_risk_analysis.py
+
+# Generated / local junk
+__pycache__/
+*.pyc
+*.chk
+*.bak
+_draft_*.txt
